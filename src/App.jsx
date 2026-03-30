@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Counter from "./components/Counter"
+import Getstarted from "./components/Getstarted"
 import Navbar from "./components/Navbar"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Counter/>
+      <Getstarted/>
     </>
   )
 }
