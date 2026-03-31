@@ -34,6 +34,7 @@ const Navbar = ({carts}) => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-2 md:gap-4">
+
                     <div className="relative">
                      <ShoppingCart className='text-[#101727]' />
                      {
@@ -44,6 +45,7 @@ const Navbar = ({carts}) => {
                         )
                      }   
                     </div>
+                    
                     <button className="text-[16px] font-semibold text-[#101727]">Login</button>
                     <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-semibold text-white px-5 py-3 rounded-4xl'>Get Started</button>
                 </div>

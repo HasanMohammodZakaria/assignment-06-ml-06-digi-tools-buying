@@ -31,7 +31,6 @@ useEffect(() => {
       <Banner/>
       <Counter/>
       <Products products={products} carts={carts} setCarts={setCarts}/>
-      {/* <Cart carts={carts}/> */}
       <Getstarted/>
       <Pricingcard/>
       <Workflow/>
