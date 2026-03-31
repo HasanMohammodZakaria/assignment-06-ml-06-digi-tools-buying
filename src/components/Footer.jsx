@@ -47,9 +47,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <hr className="border-t border-gray-700 mt-6"/>
       </div> 
-      <div className="max-w-7xl mx-auto flex justify-between mt-6">
-        <p className="text-[#FAFAFA]">© 2026 Digitools. All rights reserved.</p>
-        <div className="flex gap-6">
+      <div className="max-w-7xl mx-auto flex  justify-between mt-6">
+        <p className="text-[#FAFAFA] mb-6">© 2026 Digitools. All rights reserved.</p>
+        <div className="flex  gap-6">
             <a href="" className="text-[#FAFAFA]">Privacy Policy </a>
             <a href="" className="text-[#FAFAFA]">Terms of Service </a>
             <a href="" className="text-[#FAFAFA]">Cookies </a>
