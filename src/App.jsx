@@ -27,7 +27,7 @@ useEffect(() => {
 
   return (
     <>
-      <Navbar/>
+      <Navbar carts={carts}/>
       <Banner/>
       <Counter/>
       <Products products={products} carts={carts} setCarts={setCarts}/>

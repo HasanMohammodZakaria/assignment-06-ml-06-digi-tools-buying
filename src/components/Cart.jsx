@@ -1,14 +1,17 @@
 import { ShoppingCart } from "lucide-react";
+import { toast } from "react-toastify";
 const Cart = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, item) => sum + Number(item.price), 0);
 
   const handlePayment = () => {
     setCarts([]);
+    toast.success('Payment Successful')
   };
 
   const handleRemove = (item) => {
     const filterArray = carts.filter(card => card.id !== item.id)
     setCarts(filterArray)
+    toast.success('Product Removed!')
   }
 
 

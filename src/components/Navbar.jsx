@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/DigiTools.png';
 import { ShoppingCart } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
     return (
         <div className="border-b border-gray-200 w-full">
             <div className="navbar bg-base-100 max-w-7xl mx-auto py-6">
@@ -34,7 +34,16 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-2 md:gap-4">
-                    <ShoppingCart className='text-[#101727]' />
+                    <div className="relative">
+                     <ShoppingCart className='text-[#101727]' />
+                     {
+                        carts.length > 0 && (
+                            <span className=" absolute -top-2 -right-2 bg-black text-white text-[12px] font-semibold w-5 h-5 rounded-full flex items-center justify-center">
+                                {carts.length}
+                            </span>
+                        )
+                     }   
+                    </div>
                     <button className="text-[16px] font-semibold text-[#101727]">Login</button>
                     <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-semibold text-white px-5 py-3 rounded-4xl'>Get Started</button>
                 </div>

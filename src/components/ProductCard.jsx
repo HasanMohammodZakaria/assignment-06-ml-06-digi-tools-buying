@@ -1,6 +1,7 @@
 
 import { Check } from "lucide-react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const tagTypeStyle = {
     popular: "bg-[#E1E7FF] text-[#9514FA]",
@@ -17,7 +18,15 @@ const ProductCard = ({product, carts, setCarts}) => {
 
     const handleAddToCard = () => {
     setIsAddToCard(true);
+
+    const haveCart = carts.find((cart) => cart.id === product.id)
+
+    if(haveCart) {
+        toast.error('Product already in cart!')
+        return;
+    }
     setCarts([...carts, product])
+    toast.success ('Product added to cart')
 }
 
     return (
