@@ -32,7 +32,7 @@ const ProductCard = ({product, carts, setCarts}) => {
               {product.description}
             </p>
             <h2 className="text-[40px] font-bold text-[#101727] mb-6">
-              {product.price}
+              ${product.price}
               <span className="text-[20px] text-[#627382]">
                 /{product.period}
               </span>

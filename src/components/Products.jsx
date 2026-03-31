@@ -60,7 +60,7 @@ const Products = ({ products, carts, setCarts }) => {
 
       {isActiveTab === "cart" && (
         <div className="mt-10">
-          <Cart carts={carts} />
+          <Cart carts={carts} setCarts={setCarts}/>
         </div>
       )}
     </div>
