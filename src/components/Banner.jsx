@@ -6,18 +6,18 @@ import Bnimg from '../assets/banner.png';
 const Banner = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-15 max-w-7xl mx-auto mt-8 md:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-8">
-      <div className="w-full md:w-1/2 text-center md:text-left">
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
         <div className="badge bg-[#E1E7FF] px-4 py-4 rounded-4xl  text-[16px] font-medium flex items-center gap-2 justify-center mx-auto md:mx-0">
           <img src={Circle} alt=""/>
           <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
             New: AI-Powered Tools Available
           </span>
         </div>
-        <h2 className="text-3xl md:text-5xl lg:text-[60px] font-extrabold text-[#101727] leading-snug mt-4">
-          Supercharge Your<br/>Digital Workflow
+        <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-[60px] font-extrabold text-[#101727] leading-snug mt-4">
+          Supercharge Your Digital Workflow
         </h2>
-        <p className="md:text-[16px] lg:text-[18px] leading-7 text-[#627382] mt-4">
-          Access premium AI tools, design assets, templates, and productivity<br/>software—all in one place. Start creating faster today.<br/> Explore
+        <p className="text-sm sm:text-base md:text-[16px] lg:text-[18px] leading-6 md:leading-7 text-[#627382] mt-4 max-w-150 mx-auto md:mx-0">
+          Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore
           Products
         </p>
 
