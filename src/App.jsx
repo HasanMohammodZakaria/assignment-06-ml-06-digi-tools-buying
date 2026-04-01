@@ -7,14 +7,12 @@ import Navbar from "./components/Navbar"
 import Pricingcard from "./components/Pricingcard"
 import Products from "./components/Products"
 import Workflow from "./components/Workflow"
-import Cart from "./components/Cart"
+
 
 const getProducts = async () => {
   const res = await fetch ('/digitools.json')
   return res.json()
 }
-
-// const productPromise = getProducts()
 
 function App() {
 const [products, setProducts] = useState([])
@@ -23,7 +21,6 @@ const [carts, setCarts] = useState([])
 useEffect(() => {
   getProducts().then(data => setProducts(data))
 }, []);
-
 
   return (
     <>

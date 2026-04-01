@@ -9,9 +9,6 @@ const tagTypeStyle = {
     new: "bg-[#DBFCE7] text-[#0A883E]"
 }
 
-
-
-
 const ProductCard = ({product, carts, setCarts}) => {
 
     const [isAddToCard, setIsAddToCard] = useState(false)
@@ -56,7 +53,7 @@ const ProductCard = ({product, carts, setCarts}) => {
                 </div>
               ))}
             </div>
-            <button onClick={handleAddToCard} className={` text-[16px] font-semibold text-white px-5 py-3 rounded-4xl w-full ${isAddToCard 
+            <button onClick={handleAddToCard} className={` text-[16px] font-semibold text-white px-5 py-3 rounded-4xl w-full cursor-pointer ${isAddToCard 
             ? "bg-green-500 text-white"
             : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
 

@@ -4,7 +4,6 @@ import ProductCard from "./ProductCard";
 import Cart from "./Cart";
 
 const Products = ({ products, carts, setCarts }) => {
-  //   const products = use(productPromise);
 
   const [isActiveTab, setIsActiveTab] = useState("products");
 
@@ -30,7 +29,6 @@ const Products = ({ products, carts, setCarts }) => {
               : "bg-transparent text-black"
           }`}
           aria-label="Products"
-          //   defaultChecked
         />
         <input
           type="radio"
@@ -45,6 +43,7 @@ const Products = ({ products, carts, setCarts }) => {
           aria-label={`Cart ${carts.length > 0 ? `(${carts.length})` : ""}`}
         />
       </div>
+      
       {isActiveTab === "products" && (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10">
           {products.map((product) => (

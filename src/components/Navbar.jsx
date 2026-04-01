@@ -22,7 +22,7 @@ const Navbar = ({carts}) => {
                         </ul>
                     </div>
 
-                    <img className="ml-3" src={logo} alt="" />
+                    <img className="ml-3 w-28 md:w-32 lg:w-auto" src={logo} alt="" />
                 </div>
                 <div className="navbar-center hidden md:flex lg:flex">
                     <ul className="menu menu-horizontal px-1 text-[16px] font-semibold text-[#101727]">
@@ -47,7 +47,7 @@ const Navbar = ({carts}) => {
                     </div>
                     
                     <button className="text-[16px] font-semibold text-[#101727]">Login</button>
-                    <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-semibold text-white px-5 py-3 rounded-4xl'>Get Started</button>
+                    <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[16px] font-semibold text-white px-5 py-3 rounded-4xl hidden md:block'>Get Started</button>
                 </div>
             </div>
         </div>
