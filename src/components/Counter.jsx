@@ -9,7 +9,7 @@ const Counter = () => {
                     <p className="text-sm sm:text-base lg:text-lg font-medium text-white mt-3">Active Users</p>
                 </div>
                 <div className="text-center border-b lg:border-b-0 lg:border-r border-gray-300 pb-6 lg:pb-0">
-                    <h2 className="ext-3xl sm:text-4xl lg:text-6xl text-white font-extrabold">200+</h2>
+                    <h2 className="text-3xl sm:text-4xl lg:text-6xl text-white font-extrabold">200+</h2>
                     <p className="text-sm sm:text-base lg:text-lg font-medium text-white mt-3">Premium Tools</p>
                 </div>
                 <div className="text-center">
